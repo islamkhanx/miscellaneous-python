@@ -11,5 +11,6 @@ if __name__ == '__main__':
     graph = read_graph(PATH)
     ana_alg_path = shortest_path(graph, PID_FROM_PTITLE['Analytics'],
                                  PID_FROM_PTITLE['Algorithm'])
+    print(len(ana_alg_path))
     print('->'.join([PTITLE_FROM_PID[id] for id in ana_alg_path]))
     # Analytics->Computer_programming->Computer_program->Computer_science->Algorithm
